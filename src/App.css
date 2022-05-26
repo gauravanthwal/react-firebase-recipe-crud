@@ -1,38 +1,134 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background: #eee;
+}
 .App {
-  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recp {
+  color: #4b4b4b;
+  background: #fff;
+  max-width: 250px;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: #959da533 0px 8px 24px;
+  line-height: 1;
+  position: relative;
+}
+.recp .fa-trash {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #6f6f6fd6;
+  cursor: pointer;
+}
+.update-link{
+  position: absolute;
+  right: 45px;
+  top: 15px;
+}
+.recp .fa-pen {
+  color: #6f6f6fd6;
+  cursor: pointer;
+}
+.recp .fa-trash:hover {
+  color: #6f6f6fd6;
+  transform: translateY(-1px);
+}
+.recp .fa-pen:hover {
+  color: #6f6f6fd6;
+  transform: translateY(-1px);
+}
+.recp h3 {
+  margin: 0;
+  line-height: 0;
+  margin-top: 10px;
+}
+.recp p {
+  margin-bottom: 30px;
+  color: #b7b7b7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recp .a {
+  text-decoration: none;
+  background: #e7e6e6;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  color: inherit;
+}
+
+.nav {
+  background: #5624d0;
+}
+nav {
+  color: #eee;
+  max-width: 800px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+nav ul {
+  list-style: none;
+}
+nav li a {
+  color: #eee;
+  text-decoration: none;
+  background: #d1d1d156;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+nav li a:hover {
+  background: #d1d1d14a;
+}
+.new-recipe {
+  margin-top: 30px;
+}
+.new-recipe form {
+  padding: 1rem;
+}
+.new-recipe .input-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.new-recipe input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+.new-recipe button {
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  background: #6038c5;
+  cursor: pointer;
+  color: #eee;
+}
+.new-recipe button:hover {
+  background: #5524d0c5;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  text-decoration: none;
+  padding: 0 1rem 0.6rem 1rem;
+  background: #48484841;
+  color: #383838;
 }
